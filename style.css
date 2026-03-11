@@ -1,0 +1,103 @@
+.body{
+    display: grid;
+    grid-template-areas: 
+        "cara cara"
+        "lado corpo"
+        "pe pe"
+    ;
+    grid-template-rows: 220px auto 220px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.cara{
+    grid-area: cara;
+    background-color: blanchedalmond;
+}
+
+.corpo{
+    grid-area: corpo;
+    background-color: cadetblue;
+}
+
+.lado{
+    grid-area: lado;
+    background-color: burlywood;
+}
+
+.pe{
+    grid-area: pe;
+    background-color: crimson;
+}
+
+@media only screen and (max-width: 850px) {
+        .body{
+            display: grid;
+            grid-template-areas: 
+                "cara"
+                "lado"
+                "corpo"
+                "pe"
+        ;
+        grid-template-rows: 250px 100px auto 270px;
+        grid-template-columns: auto;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+        .body{
+            display: grid;
+            grid-template-areas: 
+                "cara"
+                "lado"
+                "corpo"
+                "pe"
+        ;
+        grid-template-rows: 300px 0px auto 290px;
+        grid-template-columns: auto;
+        
+        font-size: small;
+    }
+
+    aside{
+        display: none;
+    }
+}
+
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border: rgba(255, 255, 255, 0.473) 2px solid;
+    border-radius: 10px;
+    padding: 50px;
+    cursor: pointer;
+}
+
+.cardimg{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardh1{
+    font-size: large;
+}
+
+.cardp{
+    font-size: medium;
+}
