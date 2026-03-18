@@ -81,12 +81,23 @@
     margin: 10px;
     align-items: center;
     text-align: center;
-    border: rgba(255, 255, 255, 0.473) 2px solid;
-    border-radius: 10px;
-    padding: 50px;
+    background-color: rgba(133, 205, 207, 0.911);
+    border: none;
+    box-shadow: 0 4px 8px rgba(32, 55, 56, 0.911);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(32, 55, 56, 0.911);
+}
+
+.linkp{
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
 .cardimg{
     height: 300px;
     width: 100%;
