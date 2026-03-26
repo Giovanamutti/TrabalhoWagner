@@ -1,4 +1,4 @@
-.body{
+.body {
     display: grid;
     grid-template-areas: 
         "cara cara"
@@ -9,22 +9,22 @@
     grid-template-columns: 1fr 4fr;
 }
 
-.cara{
+.cara {
     grid-area: cara;
     background-color: blanchedalmond;
 }
 
-.corpo{
+.corpo {
     grid-area: corpo;
     background-color: cadetblue;
 }
 
-.lado{
+.lado {
     grid-area: lado;
     background-color: burlywood;
 }
 
-.pe{
+.pe {
     grid-area: pe;
     background-color: crimson;
 }
@@ -64,14 +64,14 @@
     }
 }
 
-.mae{
+.mae {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,27 +88,28 @@
     cursor: pointer;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 20px rgba(32, 55, 56, 0.911);
 }
 
-.linkp{
+.linkp {
     text-decoration: none;
     color: inherit;
     display: contents;
 }
-.cardimg{
+
+.cardimg {
     height: 300px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.cardh1{
+.cardh1 {
     font-size: large;
 }
 
-.cardp{
+.cardp {
     font-size: medium;
 }
